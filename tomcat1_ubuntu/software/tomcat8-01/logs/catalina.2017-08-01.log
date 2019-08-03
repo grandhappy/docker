@@ -1,0 +1,24 @@
+01-Aug-2017 03:55:11.447 INFO [http-nio-8080-exec-4] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+ java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:422)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:683)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+01-Aug-2017 11:23:13.059 INFO [Workspace clean-up thread] hudson.model.AsyncPeriodicWork$1.run Started Workspace clean-up
+01-Aug-2017 11:23:13.062 INFO [Workspace clean-up thread] hudson.model.AsyncPeriodicWork$1.run Finished Workspace clean-up. 2 ms
+01-Aug-2017 15:40:04.602 INFO [Download metadata thread] hudson.model.AsyncPeriodicWork$1.run Started Download metadata
+01-Aug-2017 15:40:05.774 INFO [Download metadata thread] hudson.model.DownloadService$Downloadable.load Obtained the updated data file for hudson.tasks.Maven.MavenInstaller
+01-Aug-2017 15:40:06.944 INFO [Download metadata thread] hudson.model.DownloadService$Downloadable.load Obtained the updated data file for hudson.plugins.gradle.GradleInstaller
+01-Aug-2017 15:40:07.826 INFO [Download metadata thread] hudson.model.DownloadService$Downloadable.load Obtained the updated data file for hudson.tasks.Ant.AntInstaller
+01-Aug-2017 15:40:10.422 INFO [Download metadata thread] hudson.model.DownloadService$Downloadable.load Obtained the updated data file for hudson.tools.JDKInstaller
+01-Aug-2017 15:40:10.428 INFO [Download metadata thread] hudson.model.AsyncPeriodicWork$1.run Finished Download metadata. 5,821 ms
+01-Aug-2017 16:26:55.233 INFO [Fingerprint cleanup thread] hudson.model.AsyncPeriodicWork$1.run Started Fingerprint cleanup
+01-Aug-2017 16:26:55.237 INFO [Fingerprint cleanup thread] hudson.model.AsyncPeriodicWork$1.run Finished Fingerprint cleanup. 3 ms

@@ -1,0 +1,75 @@
+16-Aug-2017 04:29:12.380 INFO [Workspace clean-up thread] hudson.model.AsyncPeriodicWork$1.run Started Workspace clean-up
+16-Aug-2017 04:29:12.387 INFO [Workspace clean-up thread] hudson.model.AsyncPeriodicWork$1.run Finished Workspace clean-up. 1 ms
+16-Aug-2017 04:54:15.001 INFO [http-nio-8080-exec-17] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+ java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:422)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:683)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+16-Aug-2017 09:45:41.980 INFO [Fingerprint cleanup thread] hudson.model.AsyncPeriodicWork$1.run Started Fingerprint cleanup
+16-Aug-2017 09:45:41.982 INFO [Fingerprint cleanup thread] hudson.model.AsyncPeriodicWork$1.run Finished Fingerprint cleanup. 1 ms
+16-Aug-2017 15:30:58.774 INFO [jenkins.util.Timer [#4]] hudson.model.AsyncPeriodicWork.doRun Download metadata thread is still running. Execution aborted.
+16-Aug-2017 22:06:33.136 SEVERE [ajp-nio-8009-exec-13] org.apache.coyote.ajp.AjpMessage.processHeader Invalid message received with signature 768
+16-Aug-2017 22:10:50.108 SEVERE [ajp-nio-8009-exec-14] org.apache.coyote.ajp.AjpMessage.processHeader Invalid message received with signature 768
+16-Aug-2017 22:45:30.655 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+16-Aug-2017 22:45:30.709 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+16-Aug-2017 22:45:30.709 INFO [Thread-5] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+16-Aug-2017 22:45:30.714 INFO [localhost-startStop-3] jenkins.model.Jenkins.cleanUp Stopping Jenkins
+16-Aug-2017 22:45:31.173 INFO [localhost-startStop-3] jenkins.model.Jenkins$21.onAttained Started termination
+16-Aug-2017 22:45:31.216 INFO [localhost-startStop-3] jenkins.model.Jenkins$21.onAttained Completed termination
+16-Aug-2017 22:45:31.216 INFO [localhost-startStop-3] jenkins.model.Jenkins._cleanUpDisconnectComputers Starting node disconnection
+16-Aug-2017 22:45:31.227 INFO [localhost-startStop-3] jenkins.model.Jenkins._cleanUpShutdownPluginManager Stopping plugin manager
+16-Aug-2017 22:45:31.229 INFO [localhost-startStop-3] jenkins.model.Jenkins._cleanUpPersistQueue Persisting build queue
+16-Aug-2017 22:45:31.233 INFO [localhost-startStop-3] jenkins.model.Jenkins._cleanUpAwaitDisconnects Waiting for node disconnection completion
+16-Aug-2017 22:45:31.233 INFO [localhost-startStop-3] jenkins.model.Jenkins.cleanUp Jenkins stopped
+16-Aug-2017 22:45:31.240 WARNING [localhost-startStop-3] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [jenkins] appears to have started a thread named [Download metadata thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.net.SocketInputStream.socketRead0(Native Method)
+ java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+ java.net.SocketInputStream.read(SocketInputStream.java:171)
+ java.net.SocketInputStream.read(SocketInputStream.java:141)
+ java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+ java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+ sun.net.www.MeteredStream.read(MeteredStream.java:134)
+ java.io.FilterInputStream.read(FilterInputStream.java:133)
+ sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3375)
+ sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+ sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+ sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+ java.io.InputStreamReader.read(InputStreamReader.java:184)
+ java.io.Reader.read(Reader.java:140)
+ org.apache.commons.io.IOUtils.copyLarge(IOUtils.java:2001)
+ org.apache.commons.io.IOUtils.copyLarge(IOUtils.java:1980)
+ org.apache.commons.io.IOUtils.copy(IOUtils.java:1957)
+ org.apache.commons.io.IOUtils.copy(IOUtils.java:1907)
+ org.apache.commons.io.IOUtils.toString(IOUtils.java:778)
+ org.apache.commons.io.IOUtils.toString(IOUtils.java:803)
+ hudson.model.DownloadService.loadJSON(DownloadService.java:173)
+ hudson.model.UpdateSite.updateDirectlyNow(UpdateSite.java:190)
+ hudson.PluginManager.doCheckUpdatesServer(PluginManager.java:1632)
+ jenkins.model.DownloadSettings$DailyCheck.execute(DownloadSettings.java:131)
+ hudson.model.AsyncPeriodicWork$1.run(AsyncPeriodicWork.java:101)
+ java.lang.Thread.run(Thread.java:748)
+16-Aug-2017 22:45:31.240 WARNING [localhost-startStop-3] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [jenkins] appears to have started a thread named [Computer.threadPoolForRemoting [#3]] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+ java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:362)
+ java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:941)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:748)
+16-Aug-2017 22:45:31.245 SEVERE [localhost-startStop-3] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [jenkins] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@573c5853]) and a value of type [jenkins.security.NonSerializableSecurityContext] (value [jenkins.security.NonSerializableSecurityContext@1f: Authentication: org.acegisecurity.providers.UsernamePasswordAuthenticationToken@1f: Username: SYSTEM; Password: [PROTECTED]; Authenticated: false; Details: null; Not granted any authorities]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+16-Aug-2017 22:45:31.245 SEVERE [localhost-startStop-3] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [jenkins] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@573c5853]) and a value of type [org.acegisecurity.context.SecurityContextImpl] (value [org.acegisecurity.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+16-Aug-2017 22:45:31.605 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+16-Aug-2017 22:45:31.607 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+16-Aug-2017 22:45:31.608 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+16-Aug-2017 22:45:31.609 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]

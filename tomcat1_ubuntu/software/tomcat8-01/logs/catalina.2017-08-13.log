@@ -1,0 +1,5 @@
+13-Aug-2017 04:29:12.380 INFO [Workspace clean-up thread] hudson.model.AsyncPeriodicWork$1.run Started Workspace clean-up
+13-Aug-2017 04:29:12.385 INFO [Workspace clean-up thread] hudson.model.AsyncPeriodicWork$1.run Finished Workspace clean-up. 4 ms
+13-Aug-2017 09:45:41.980 INFO [Fingerprint cleanup thread] hudson.model.AsyncPeriodicWork$1.run Started Fingerprint cleanup
+13-Aug-2017 09:45:41.982 INFO [Fingerprint cleanup thread] hudson.model.AsyncPeriodicWork$1.run Finished Fingerprint cleanup. 1 ms
+13-Aug-2017 15:30:58.774 INFO [jenkins.util.Timer [#5]] hudson.model.AsyncPeriodicWork.doRun Download metadata thread is still running. Execution aborted.

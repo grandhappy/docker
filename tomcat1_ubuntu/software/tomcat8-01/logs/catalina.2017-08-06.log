@@ -1,0 +1,11 @@
+06-Aug-2017 11:23:13.059 INFO [Workspace clean-up thread] hudson.model.AsyncPeriodicWork$1.run Started Workspace clean-up
+06-Aug-2017 11:23:13.065 INFO [Workspace clean-up thread] hudson.model.AsyncPeriodicWork$1.run Finished Workspace clean-up. 2 ms
+06-Aug-2017 15:40:04.603 INFO [Download metadata thread] hudson.model.AsyncPeriodicWork$1.run Started Download metadata
+06-Aug-2017 15:40:53.189 INFO [Download metadata thread] hudson.model.UpdateSite.updateData Obtained the latest update center data file for UpdateSource default
+06-Aug-2017 15:40:54.291 INFO [Download metadata thread] hudson.model.DownloadService$Downloadable.load Obtained the updated data file for hudson.tasks.Maven.MavenInstaller
+06-Aug-2017 15:40:55.402 INFO [Download metadata thread] hudson.model.DownloadService$Downloadable.load Obtained the updated data file for hudson.plugins.gradle.GradleInstaller
+06-Aug-2017 15:40:56.241 INFO [Download metadata thread] hudson.model.DownloadService$Downloadable.load Obtained the updated data file for hudson.tasks.Ant.AntInstaller
+06-Aug-2017 15:40:58.476 INFO [Download metadata thread] hudson.model.DownloadService$Downloadable.load Obtained the updated data file for hudson.tools.JDKInstaller
+06-Aug-2017 15:40:58.476 INFO [Download metadata thread] hudson.model.AsyncPeriodicWork$1.run Finished Download metadata. 53,867 ms
+06-Aug-2017 16:26:55.233 INFO [Fingerprint cleanup thread] hudson.model.AsyncPeriodicWork$1.run Started Fingerprint cleanup
+06-Aug-2017 16:26:55.234 INFO [Fingerprint cleanup thread] hudson.model.AsyncPeriodicWork$1.run Finished Fingerprint cleanup. 0 ms

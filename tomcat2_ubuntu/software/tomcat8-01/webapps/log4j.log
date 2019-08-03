@@ -1,0 +1,690 @@
+56:34.751[      ContextLoader.java:272:INFO ] Root WebApplicationContext: initialization started
+56:34.859[AbstractEnvironment.java:114:DEBUG] Initializing new StandardServletEnvironment
+56:34.868[MutablePropertySources.java:104:DEBUG] Adding [servletConfigInitParams] PropertySource with lowest search precedence
+56:34.869[MutablePropertySources.java:104:DEBUG] Adding [servletContextInitParams] PropertySource with lowest search precedence
+56:34.872[MutablePropertySources.java:104:DEBUG] Adding [jndiProperties] PropertySource with lowest search precedence
+56:34.872[MutablePropertySources.java:104:DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+56:34.873[MutablePropertySources.java:104:DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+56:34.876[AbstractEnvironment.java:120:DEBUG] Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+56:34.879[AbstractApplicationContext.java:500:INFO ] Refreshing Root WebApplicationContext: startup date [Wed Jul 19 13:56:34 CST 2017]; root of context hierarchy
+56:34.886[MutablePropertySources.java:161:DEBUG] Replacing [servletContextInitParams] PropertySource with [servletContextInitParams]
+56:34.937[AbstractEnvironment.java:114:DEBUG] Initializing new StandardEnvironment
+56:34.938[MutablePropertySources.java:104:DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+56:34.938[MutablePropertySources.java:104:DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+56:34.938[AbstractEnvironment.java:120:DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+56:34.939[AbstractEnvironment.java:114:DEBUG] Initializing new StandardEnvironment
+56:34.939[MutablePropertySources.java:104:DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+56:34.942[MutablePropertySources.java:104:DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+56:34.942[AbstractEnvironment.java:120:DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+56:34.953[XmlBeanDefinitionReader.java:315:INFO ] Loading XML bean definitions from URL [file:/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/applicationContext.xml]
+56:34.957[DefaultDocumentLoader.java:72 :DEBUG] Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+56:34.994[PluggableSchemaResolver.java:140:DEBUG] Loading schema mappings from [META-INF/spring.schemas]
+56:35.001[PluggableSchemaResolver.java:146:DEBUG] Loaded schema mappings: {http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd=org/springframework/web/servlet/config/spring-mvc-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-3.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd}
+56:35.007[PluggableSchemaResolver.java:118:DEBUG] Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.1.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.1.xsd
+56:35.087[PluggableSchemaResolver.java:118:DEBUG] Found XML schema [http://www.springframework.org/schema/context/spring-context-3.1.xsd] in classpath: org/springframework/context/config/spring-context-3.1.xsd
+56:35.101[PluggableSchemaResolver.java:118:DEBUG] Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.1.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.1.xsd
+56:35.112[PluggableSchemaResolver.java:118:DEBUG] Found XML schema [http://www.springframework.org/schema/tx/spring-tx-3.1.xsd] in classpath: org/springframework/transaction/config/spring-tx-3.1.xsd
+56:35.131[DefaultBeanDefinitionDocumentReader.java:108:DEBUG] Loading bean definitions
+56:35.153[DefaultNamespaceHandlerResolver.java:156:DEBUG] Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+56:35.177[AbstractEnvironment.java:114:DEBUG] Initializing new StandardEnvironment
+56:35.178[MutablePropertySources.java:104:DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+56:35.178[MutablePropertySources.java:104:DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+56:35.179[AbstractEnvironment.java:120:DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+56:35.192[ClassPathScanningCandidateComponentProvider.java:202:INFO ] JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+56:35.202[PathMatchingResourcePatternResolver.java:550:DEBUG] Looking for matching resources in directory tree [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo]
+56:35.208[PathMatchingResourcePatternResolver.java:612:DEBUG] Searching directory [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo] for files matching pattern [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/**/*.class]
+56:35.210[PathMatchingResourcePatternResolver.java:612:DEBUG] Searching directory [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/com] for files matching pattern [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/**/*.class]
+56:35.211[PathMatchingResourcePatternResolver.java:612:DEBUG] Searching directory [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/com/demo] for files matching pattern [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/**/*.class]
+56:35.216[PathMatchingResourcePatternResolver.java:612:DEBUG] Searching directory [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/com/demo/util] for files matching pattern [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/**/*.class]
+56:35.218[PathMatchingResourcePatternResolver.java:612:DEBUG] Searching directory [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/filter] for files matching pattern [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/**/*.class]
+56:35.218[PathMatchingResourcePatternResolver.java:612:DEBUG] Searching directory [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/web] for files matching pattern [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/**/*.class]
+56:35.219[PathMatchingResourcePatternResolver.java:612:DEBUG] Searching directory [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/web/xinhua] for files matching pattern [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/**/*.class]
+56:35.233[PathMatchingResourcePatternResolver.java:612:DEBUG] Searching directory [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/model] for files matching pattern [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/**/*.class]
+56:35.234[PathMatchingResourcePatternResolver.java:351:DEBUG] Resolved location pattern [classpath*:com/demo/**/*.class] to resources [file [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/com/demo/util/PubUtil.class], file [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/filter/AuthFilter.class], file [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/web/LockTest$2.class], file [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/web/xinhua/XinHuaController.class], file [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/web/LockTest.class], file [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/web/LockTest$User.class], file [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/web/IndexController.class], file [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/web/LockTest$1.class], file [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/model/StudentEntity.class]]
+56:35.286[ClassPathScanningCandidateComponentProvider.java:244:DEBUG] Identified candidate component class: file [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/web/xinhua/XinHuaController.class]
+56:35.294[ClassPathScanningCandidateComponentProvider.java:244:DEBUG] Identified candidate component class: file [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/web/IndexController.class]
+56:35.354[AbstractBeanDefinitionReader.java:216:DEBUG] Loaded 15 bean definitions from location pattern [classpath*:applicationContext.xml]
+56:35.355[AbstractApplicationContext.java:530:DEBUG] Bean factory for Root WebApplicationContext: org.springframework.beans.factory.support.DefaultListableBeanFactory@7db39876: defining beans [xinHuaController,indexController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,filterBean,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,jdbcTemplate,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+56:35.390[DefaultSingletonBeanRegistry.java:217:DEBUG] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+56:35.391[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+56:35.425[AbstractAutowireCapableBeanFactory.java:504:DEBUG] Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+56:35.426[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+56:35.504[DefaultSingletonBeanRegistry.java:217:DEBUG] Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+56:35.504[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+56:35.506[AbstractAutowireCapableBeanFactory.java:504:DEBUG] Eagerly caching bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0' to allow for resolving potential circular references
+56:35.553[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+56:35.554[MutablePropertySources.java:104:DEBUG] Adding [environmentProperties] PropertySource with lowest search precedence
+56:35.555[PropertiesLoaderSupport.java:177:INFO ] Loading properties file from class path resource [jdbc.properties]
+56:35.555[MutablePropertySources.java:104:DEBUG] Adding [localProperties] PropertySource with lowest search precedence
+56:35.561[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'jdbc.driverClassName' in [environmentProperties]
+56:35.561[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'jdbc.driverClassName' in [servletConfigInitParams]
+56:35.564[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'jdbc.driverClassName' in [servletContextInitParams]
+56:35.564[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'jdbc.driverClassName' in [jndiProperties]
+56:35.564[       JndiTemplate.java:150:DEBUG] Looking up JNDI object with name [java:comp/env/jdbc.driverClassName]
+56:35.565[ JndiLocatorSupport.java:101:DEBUG] Converted JNDI name [java:comp/env/jdbc.driverClassName] not found - trying original name [jdbc.driverClassName]. javax.naming.NameNotFoundException: Name [jdbc.driverClassName] is not bound in this Context. Unable to find [jdbc.driverClassName].
+56:35.566[       JndiTemplate.java:150:DEBUG] Looking up JNDI object with name [jdbc.driverClassName]
+56:35.572[ JndiPropertySource.java:87 :DEBUG] JNDI lookup for name [jdbc.driverClassName] threw NamingException with message: Name [jdbc.driverClassName] is not bound in this Context. Unable to find [jdbc.driverClassName].. Returning null.
+56:35.573[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'jdbc.driverClassName' in [systemProperties]
+56:35.573[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'jdbc.driverClassName' in [systemEnvironment]
+56:35.574[PropertySourcesPropertyResolver.java:93 :DEBUG] Could not find key 'jdbc.driverClassName' in any property source. Returning [null]
+56:35.574[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'jdbc.driverClassName' in [localProperties]
+56:35.575[PropertySourcesPropertyResolver.java:79 :DEBUG] Found key 'jdbc.driverClassName' in [localProperties] with type [String] and value 'com.mysql.jdbc.Driver'
+56:35.576[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'jdbc.password' in [environmentProperties]
+56:35.577[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'jdbc.password' in [servletConfigInitParams]
+56:35.578[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'jdbc.password' in [servletContextInitParams]
+56:35.578[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'jdbc.password' in [jndiProperties]
+56:35.578[       JndiTemplate.java:150:DEBUG] Looking up JNDI object with name [java:comp/env/jdbc.password]
+56:35.579[ JndiLocatorSupport.java:101:DEBUG] Converted JNDI name [java:comp/env/jdbc.password] not found - trying original name [jdbc.password]. javax.naming.NameNotFoundException: Name [jdbc.password] is not bound in this Context. Unable to find [jdbc.password].
+56:35.579[       JndiTemplate.java:150:DEBUG] Looking up JNDI object with name [jdbc.password]
+56:35.581[ JndiPropertySource.java:87 :DEBUG] JNDI lookup for name [jdbc.password] threw NamingException with message: Name [jdbc.password] is not bound in this Context. Unable to find [jdbc.password].. Returning null.
+56:35.582[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'jdbc.password' in [systemProperties]
+56:35.582[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'jdbc.password' in [systemEnvironment]
+56:35.585[PropertySourcesPropertyResolver.java:93 :DEBUG] Could not find key 'jdbc.password' in any property source. Returning [null]
+56:35.588[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'jdbc.password' in [localProperties]
+56:35.588[PropertySourcesPropertyResolver.java:79 :DEBUG] Found key 'jdbc.password' in [localProperties] with type [String] and value 'health@123'
+56:35.588[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'jdbc.url' in [environmentProperties]
+56:35.589[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'jdbc.url' in [servletConfigInitParams]
+56:35.591[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'jdbc.url' in [servletContextInitParams]
+56:35.591[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'jdbc.url' in [jndiProperties]
+56:35.591[       JndiTemplate.java:150:DEBUG] Looking up JNDI object with name [java:comp/env/jdbc.url]
+56:35.591[ JndiLocatorSupport.java:101:DEBUG] Converted JNDI name [java:comp/env/jdbc.url] not found - trying original name [jdbc.url]. javax.naming.NameNotFoundException: Name [jdbc.url] is not bound in this Context. Unable to find [jdbc.url].
+56:35.592[       JndiTemplate.java:150:DEBUG] Looking up JNDI object with name [jdbc.url]
+56:35.592[ JndiPropertySource.java:87 :DEBUG] JNDI lookup for name [jdbc.url] threw NamingException with message: Name [jdbc.url] is not bound in this Context. Unable to find [jdbc.url].. Returning null.
+56:35.592[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'jdbc.url' in [systemProperties]
+56:35.592[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'jdbc.url' in [systemEnvironment]
+56:35.597[PropertySourcesPropertyResolver.java:93 :DEBUG] Could not find key 'jdbc.url' in any property source. Returning [null]
+56:35.597[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'jdbc.url' in [localProperties]
+56:35.599[PropertySourcesPropertyResolver.java:79 :DEBUG] Found key 'jdbc.url' in [localProperties] with type [String] and value 'jdbc:mysql://rm-2ze6wz9v39kb3j3pk.mysql.rds.aliyuncs.com/test?useUnicode=true&characterEncoding=UTF8&useSSL=false'
+56:35.600[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'jdbc.username' in [environmentProperties]
+56:35.601[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'jdbc.username' in [servletConfigInitParams]
+56:35.602[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'jdbc.username' in [servletContextInitParams]
+56:35.602[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'jdbc.username' in [jndiProperties]
+56:35.602[       JndiTemplate.java:150:DEBUG] Looking up JNDI object with name [java:comp/env/jdbc.username]
+56:35.603[ JndiLocatorSupport.java:101:DEBUG] Converted JNDI name [java:comp/env/jdbc.username] not found - trying original name [jdbc.username]. javax.naming.NameNotFoundException: Name [jdbc.username] is not bound in this Context. Unable to find [jdbc.username].
+56:35.603[       JndiTemplate.java:150:DEBUG] Looking up JNDI object with name [jdbc.username]
+56:35.603[ JndiPropertySource.java:87 :DEBUG] JNDI lookup for name [jdbc.username] threw NamingException with message: Name [jdbc.username] is not bound in this Context. Unable to find [jdbc.username].. Returning null.
+56:35.603[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'jdbc.username' in [systemProperties]
+56:35.608[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'jdbc.username' in [systemEnvironment]
+56:35.609[PropertySourcesPropertyResolver.java:93 :DEBUG] Could not find key 'jdbc.username' in any property source. Returning [null]
+56:35.609[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'jdbc.username' in [localProperties]
+56:35.609[PropertySourcesPropertyResolver.java:79 :DEBUG] Found key 'jdbc.username' in [localProperties] with type [String] and value 'healthtest'
+56:35.611[DefaultSingletonBeanRegistry.java:217:DEBUG] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+56:35.611[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+56:35.612[AbstractAutowireCapableBeanFactory.java:504:DEBUG] Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+56:35.612[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+56:35.617[DefaultSingletonBeanRegistry.java:217:DEBUG] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+56:35.617[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+56:35.617[AbstractAutowireCapableBeanFactory.java:504:DEBUG] Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+56:35.617[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+56:35.618[DefaultSingletonBeanRegistry.java:217:DEBUG] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+56:35.618[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+56:35.620[AbstractAutowireCapableBeanFactory.java:504:DEBUG] Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+56:35.624[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+56:35.625[DefaultSingletonBeanRegistry.java:217:DEBUG] Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0'
+56:35.625[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0'
+56:35.625[AbstractAutowireCapableBeanFactory.java:504:DEBUG] Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0' to allow for resolving potential circular references
+56:35.625[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0'
+56:35.626[DefaultSingletonBeanRegistry.java:217:DEBUG] Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+56:35.626[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+56:35.647[AbstractAutowireCapableBeanFactory.java:504:DEBUG] Eagerly caching bean 'org.springframework.aop.config.internalAutoProxyCreator' to allow for resolving potential circular references
+56:35.674[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+56:35.675[AbstractApplicationContext.java:799:DEBUG] Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@6d1c037d]
+56:35.682[AbstractApplicationContext.java:823:DEBUG] Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@4d01d930]
+56:35.686[UiApplicationContextUtils.java:85 :DEBUG] Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@29a18217]
+56:35.689[DefaultListableBeanFactory.java:581:INFO ] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7db39876: defining beans [xinHuaController,indexController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,filterBean,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,jdbcTemplate,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+56:35.696[DefaultSingletonBeanRegistry.java:217:DEBUG] Creating shared instance of singleton bean 'xinHuaController'
+56:35.697[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'xinHuaController'
+56:35.709[AbstractAutowireCapableBeanFactory.java:504:DEBUG] Eagerly caching bean 'xinHuaController' to allow for resolving potential circular references
+56:35.722[DefaultSingletonBeanRegistry.java:217:DEBUG] Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+56:35.722[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+56:35.724[AbstractAutowireCapableBeanFactory.java:504:DEBUG] Eagerly caching bean 'org.springframework.transaction.config.internalTransactionAdvisor' to allow for resolving potential circular references
+56:35.753[DefaultSingletonBeanRegistry.java:217:DEBUG] Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+56:35.753[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+56:35.762[AbstractAutowireCapableBeanFactory.java:504:DEBUG] Eagerly caching bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' to allow for resolving potential circular references
+56:35.774[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+56:35.775[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+56:35.787[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'xinHuaController'
+56:35.787[DefaultSingletonBeanRegistry.java:217:DEBUG] Creating shared instance of singleton bean 'indexController'
+56:35.788[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'indexController'
+56:35.788[AbstractAutowireCapableBeanFactory.java:504:DEBUG] Eagerly caching bean 'indexController' to allow for resolving potential circular references
+56:35.794[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+56:35.795[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'indexController'
+56:35.797[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+56:35.797[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+56:35.798[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+56:35.798[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+56:35.798[DefaultSingletonBeanRegistry.java:217:DEBUG] Creating shared instance of singleton bean 'filterBean'
+56:35.798[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'filterBean'
+56:35.800[AbstractAutowireCapableBeanFactory.java:504:DEBUG] Eagerly caching bean 'filterBean' to allow for resolving potential circular references
+56:35.806[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+56:35.807[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'filterBean'
+56:35.808[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+56:35.808[DefaultSingletonBeanRegistry.java:217:DEBUG] Creating shared instance of singleton bean 'dataSource'
+56:35.808[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'dataSource'
+56:35.827[AbstractAutowireCapableBeanFactory.java:504:DEBUG] Eagerly caching bean 'dataSource' to allow for resolving potential circular references
+56:35.851[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+56:35.863[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'dataSource'
+56:35.864[DefaultSingletonBeanRegistry.java:217:DEBUG] Creating shared instance of singleton bean 'jdbcTemplate'
+56:35.864[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'jdbcTemplate'
+56:35.882[AbstractAutowireCapableBeanFactory.java:504:DEBUG] Eagerly caching bean 'jdbcTemplate' to allow for resolving potential circular references
+56:35.925[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'dataSource'
+56:35.928[AbstractAutowireCapableBeanFactory.java:1498:DEBUG] Invoking afterPropertiesSet() on bean with name 'jdbcTemplate'
+56:35.928[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+56:35.931[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'jdbcTemplate'
+56:35.938[DefaultSingletonBeanRegistry.java:217:DEBUG] Creating shared instance of singleton bean 'txManager'
+56:35.938[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'txManager'
+56:35.943[AbstractAutowireCapableBeanFactory.java:504:DEBUG] Eagerly caching bean 'txManager' to allow for resolving potential circular references
+56:35.964[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'dataSource'
+56:35.965[AbstractAutowireCapableBeanFactory.java:1498:DEBUG] Invoking afterPropertiesSet() on bean with name 'txManager'
+56:35.967[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+56:35.969[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'txManager'
+56:35.972[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+56:35.972[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+56:35.972[DefaultSingletonBeanRegistry.java:217:DEBUG] Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+56:35.973[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+56:35.974[AbstractAutowireCapableBeanFactory.java:504:DEBUG] Eagerly caching bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0' to allow for resolving potential circular references
+56:35.985[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+56:35.986[AbstractAutowireCapableBeanFactory.java:1498:DEBUG] Invoking afterPropertiesSet() on bean with name 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+56:35.988[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+56:35.988[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+56:35.988[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0'
+56:35.990[AbstractApplicationContext.java:850:DEBUG] Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@7eeafb7d]
+56:35.998[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'lifecycleProcessor'
+56:36.000[      ContextLoader.java:296:DEBUG] Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+56:36.002[      ContextLoader.java:301:INFO ] Root WebApplicationContext: initialization completed in 1248 ms
+56:36.021[AbstractEnvironment.java:114:DEBUG] Initializing new StandardServletEnvironment
+56:36.022[MutablePropertySources.java:104:DEBUG] Adding [servletConfigInitParams] PropertySource with lowest search precedence
+56:36.022[MutablePropertySources.java:104:DEBUG] Adding [servletContextInitParams] PropertySource with lowest search precedence
+56:36.022[MutablePropertySources.java:104:DEBUG] Adding [jndiProperties] PropertySource with lowest search precedence
+56:36.022[MutablePropertySources.java:104:DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+56:36.022[MutablePropertySources.java:104:DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+56:36.023[AbstractEnvironment.java:120:DEBUG] Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+56:36.024[  GenericFilterBean.java:172:DEBUG] Initializing filter 'encodingFilter'
+56:36.041[  GenericFilterBean.java:197:DEBUG] Filter 'encodingFilter' configured successfully
+56:36.052[AbstractEnvironment.java:114:DEBUG] Initializing new StandardServletEnvironment
+56:36.052[MutablePropertySources.java:104:DEBUG] Adding [servletConfigInitParams] PropertySource with lowest search precedence
+56:36.053[MutablePropertySources.java:104:DEBUG] Adding [servletContextInitParams] PropertySource with lowest search precedence
+56:36.053[MutablePropertySources.java:104:DEBUG] Adding [jndiProperties] PropertySource with lowest search precedence
+56:36.053[MutablePropertySources.java:104:DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+56:36.054[MutablePropertySources.java:104:DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+56:36.054[AbstractEnvironment.java:120:DEBUG] Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+56:36.056[    HttpServletBean.java:115:DEBUG] Initializing servlet 'dispatcher'
+56:36.088[   FrameworkServlet.java:444:INFO ] FrameworkServlet 'dispatcher': initialization started
+56:36.089[   FrameworkServlet.java:572:DEBUG] Servlet with name 'dispatcher' will try to create custom WebApplicationContext context of class 'org.springframework.web.context.support.XmlWebApplicationContext', using parent context [Root WebApplicationContext: startup date [Wed Jul 19 13:56:34 CST 2017]; root of context hierarchy]
+56:36.091[AbstractEnvironment.java:114:DEBUG] Initializing new StandardServletEnvironment
+56:36.091[MutablePropertySources.java:104:DEBUG] Adding [servletConfigInitParams] PropertySource with lowest search precedence
+56:36.092[MutablePropertySources.java:104:DEBUG] Adding [servletContextInitParams] PropertySource with lowest search precedence
+56:36.093[MutablePropertySources.java:104:DEBUG] Adding [jndiProperties] PropertySource with lowest search precedence
+56:36.093[MutablePropertySources.java:104:DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+56:36.094[MutablePropertySources.java:104:DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+56:36.094[AbstractEnvironment.java:120:DEBUG] Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+56:36.094[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'spring.profiles.active' in [servletConfigInitParams]
+56:36.095[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'spring.profiles.active' in [servletContextInitParams]
+56:36.095[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'spring.profiles.active' in [jndiProperties]
+56:36.096[       JndiTemplate.java:150:DEBUG] Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+56:36.096[ JndiLocatorSupport.java:101:DEBUG] Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].
+56:36.097[       JndiTemplate.java:150:DEBUG] Looking up JNDI object with name [spring.profiles.active]
+56:36.098[ JndiPropertySource.java:87 :DEBUG] JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].. Returning null.
+56:36.098[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'spring.profiles.active' in [systemProperties]
+56:36.098[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'spring.profiles.active' in [systemEnvironment]
+56:36.104[PropertySourcesPropertyResolver.java:93 :DEBUG] Could not find key 'spring.profiles.active' in any property source. Returning [null]
+56:36.104[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'spring.profiles.default' in [servletConfigInitParams]
+56:36.105[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'spring.profiles.default' in [servletContextInitParams]
+56:36.105[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'spring.profiles.default' in [jndiProperties]
+56:36.105[       JndiTemplate.java:150:DEBUG] Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+56:36.106[ JndiLocatorSupport.java:101:DEBUG] Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].
+56:36.106[       JndiTemplate.java:150:DEBUG] Looking up JNDI object with name [spring.profiles.default]
+56:36.106[ JndiPropertySource.java:87 :DEBUG] JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].. Returning null.
+56:36.107[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'spring.profiles.default' in [systemProperties]
+56:36.107[PropertySourcesPropertyResolver.java:70 :DEBUG] Searching for key 'spring.profiles.default' in [systemEnvironment]
+56:36.107[PropertySourcesPropertyResolver.java:93 :DEBUG] Could not find key 'spring.profiles.default' in any property source. Returning [null]
+56:36.109[AbstractApplicationContext.java:500:INFO ] Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Wed Jul 19 13:56:36 CST 2017]; parent: Root WebApplicationContext
+56:36.109[MutablePropertySources.java:161:DEBUG] Replacing [servletContextInitParams] PropertySource with [servletContextInitParams]
+56:36.110[MutablePropertySources.java:161:DEBUG] Replacing [servletConfigInitParams] PropertySource with [servletConfigInitParams]
+56:36.112[AbstractEnvironment.java:114:DEBUG] Initializing new StandardEnvironment
+56:36.112[MutablePropertySources.java:104:DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+56:36.117[MutablePropertySources.java:104:DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+56:36.117[AbstractEnvironment.java:120:DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+56:36.118[AbstractEnvironment.java:114:DEBUG] Initializing new StandardEnvironment
+56:36.118[MutablePropertySources.java:104:DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+56:36.118[MutablePropertySources.java:104:DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+56:36.119[AbstractEnvironment.java:120:DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+56:36.119[XmlBeanDefinitionReader.java:315:INFO ] Loading XML bean definitions from URL [file:/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/spring-mvc.xml]
+56:36.121[DefaultDocumentLoader.java:72 :DEBUG] Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+56:36.123[PluggableSchemaResolver.java:140:DEBUG] Loading schema mappings from [META-INF/spring.schemas]
+56:36.127[PluggableSchemaResolver.java:146:DEBUG] Loaded schema mappings: {http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd=org/springframework/web/servlet/config/spring-mvc-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-3.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd}
+56:36.132[PluggableSchemaResolver.java:118:DEBUG] Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+56:36.162[PluggableSchemaResolver.java:118:DEBUG] Found XML schema [http://www.springframework.org/schema/context/spring-context-3.0.xsd] in classpath: org/springframework/context/config/spring-context-3.0.xsd
+56:36.170[PluggableSchemaResolver.java:118:DEBUG] Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.0.xsd
+56:36.188[DefaultBeanDefinitionDocumentReader.java:108:DEBUG] Loading bean definitions
+56:36.197[DefaultNamespaceHandlerResolver.java:156:DEBUG] Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+56:36.198[AbstractEnvironment.java:114:DEBUG] Initializing new StandardEnvironment
+56:36.199[MutablePropertySources.java:104:DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+56:36.199[MutablePropertySources.java:104:DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+56:36.199[AbstractEnvironment.java:120:DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+56:36.200[ClassPathScanningCandidateComponentProvider.java:202:INFO ] JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+56:36.204[PathMatchingResourcePatternResolver.java:550:DEBUG] Looking for matching resources in directory tree [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo]
+56:36.208[PathMatchingResourcePatternResolver.java:612:DEBUG] Searching directory [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo] for files matching pattern [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/**/*.class]
+56:36.208[PathMatchingResourcePatternResolver.java:612:DEBUG] Searching directory [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/com] for files matching pattern [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/**/*.class]
+56:36.209[PathMatchingResourcePatternResolver.java:612:DEBUG] Searching directory [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/com/demo] for files matching pattern [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/**/*.class]
+56:36.209[PathMatchingResourcePatternResolver.java:612:DEBUG] Searching directory [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/com/demo/util] for files matching pattern [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/**/*.class]
+56:36.211[PathMatchingResourcePatternResolver.java:612:DEBUG] Searching directory [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/filter] for files matching pattern [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/**/*.class]
+56:36.212[PathMatchingResourcePatternResolver.java:612:DEBUG] Searching directory [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/web] for files matching pattern [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/**/*.class]
+56:36.213[PathMatchingResourcePatternResolver.java:612:DEBUG] Searching directory [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/web/xinhua] for files matching pattern [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/**/*.class]
+56:36.221[PathMatchingResourcePatternResolver.java:612:DEBUG] Searching directory [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/model] for files matching pattern [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/**/*.class]
+56:36.221[PathMatchingResourcePatternResolver.java:351:DEBUG] Resolved location pattern [classpath*:com/demo/**/*.class] to resources [file [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/com/demo/util/PubUtil.class], file [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/filter/AuthFilter.class], file [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/web/LockTest$2.class], file [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/web/xinhua/XinHuaController.class], file [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/web/LockTest.class], file [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/web/LockTest$User.class], file [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/web/IndexController.class], file [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/web/LockTest$1.class], file [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/model/StudentEntity.class]]
+56:36.223[ClassPathScanningCandidateComponentProvider.java:244:DEBUG] Identified candidate component class: file [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/web/xinhua/XinHuaController.class]
+56:36.225[ClassPathScanningCandidateComponentProvider.java:244:DEBUG] Identified candidate component class: file [/home/zule/tomcat8-01/webapps/Demo/WEB-INF/classes/com/demo/web/IndexController.class]
+56:36.226[BeanDefinitionParserDelegate.java:497:DEBUG] Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0]
+56:36.235[BeanDefinitionParserDelegate.java:497:DEBUG] Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.web.servlet.i18n.LocaleChangeInterceptor#0]
+56:36.236[AbstractBeanDefinitionReader.java:216:DEBUG] Loaded 11 bean definitions from location pattern [classpath*:/spring-mvc.xml]
+56:36.236[AbstractApplicationContext.java:530:DEBUG] Bean factory for WebApplicationContext for namespace 'dispatcher-servlet': org.springframework.beans.factory.support.DefaultListableBeanFactory@3ac96eb6: defining beans [xinHuaController,indexController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,mappingJacksonHttpMessageConverter,utf8StringHttpMessageConverter,viewResolver,org.springframework.web.servlet.i18n.LocaleChangeInterceptor#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@7db39876
+56:36.247[DefaultSingletonBeanRegistry.java:217:DEBUG] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+56:36.252[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+56:36.252[AbstractAutowireCapableBeanFactory.java:504:DEBUG] Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+56:36.253[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+56:36.270[DefaultSingletonBeanRegistry.java:217:DEBUG] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+56:36.272[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+56:36.272[AbstractAutowireCapableBeanFactory.java:504:DEBUG] Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+56:36.273[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+56:36.273[DefaultSingletonBeanRegistry.java:217:DEBUG] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+56:36.273[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+56:36.273[AbstractAutowireCapableBeanFactory.java:504:DEBUG] Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+56:36.276[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+56:36.276[DefaultSingletonBeanRegistry.java:217:DEBUG] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+56:36.276[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+56:36.277[AbstractAutowireCapableBeanFactory.java:504:DEBUG] Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+56:36.277[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+56:36.277[DefaultSingletonBeanRegistry.java:217:DEBUG] Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0'
+56:36.277[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0'
+56:36.277[AbstractAutowireCapableBeanFactory.java:504:DEBUG] Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0' to allow for resolving potential circular references
+56:36.278[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0'
+56:36.278[AbstractApplicationContext.java:799:DEBUG] Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@43fc6d38]
+56:36.278[AbstractApplicationContext.java:823:DEBUG] Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@5fbc8dae]
+56:36.278[UiApplicationContextUtils.java:85 :DEBUG] Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@1c9976cc]
+56:36.280[DefaultListableBeanFactory.java:581:INFO ] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3ac96eb6: defining beans [xinHuaController,indexController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,mappingJacksonHttpMessageConverter,utf8StringHttpMessageConverter,viewResolver,org.springframework.web.servlet.i18n.LocaleChangeInterceptor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@7db39876
+56:36.282[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+56:36.282[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+56:36.282[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+56:36.282[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+56:36.283[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0'
+56:36.283[AbstractApplicationContext.java:850:DEBUG] Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@3f7fd1b8]
+56:36.283[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'lifecycleProcessor'
+56:36.284[  DispatcherServlet.java:465:DEBUG] Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+56:36.288[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+56:36.296[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+56:36.297[  DispatcherServlet.java:487:DEBUG] Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@6c9b8e57]
+56:36.298[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+56:36.304[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+56:36.305[  DispatcherServlet.java:509:DEBUG] Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@19ce42c0]
+56:36.310[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+56:36.340[AbstractDetectingUrlHandlerMapping.java:71 :DEBUG] Looking for URL mappings in application context: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Wed Jul 19 13:56:36 CST 2017]; parent: Root WebApplicationContext
+56:36.342[AbstractDetectingUrlHandlerMapping.java:86 :DEBUG] Rejected bean name 'xinHuaController': no URL paths identified
+56:36.344[AbstractDetectingUrlHandlerMapping.java:86 :DEBUG] Rejected bean name 'indexController': no URL paths identified
+56:36.344[AbstractDetectingUrlHandlerMapping.java:86 :DEBUG] Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+56:36.344[AbstractDetectingUrlHandlerMapping.java:86 :DEBUG] Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+56:36.345[AbstractDetectingUrlHandlerMapping.java:86 :DEBUG] Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+56:36.345[AbstractDetectingUrlHandlerMapping.java:86 :DEBUG] Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+56:36.345[AbstractDetectingUrlHandlerMapping.java:86 :DEBUG] Rejected bean name 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0': no URL paths identified
+56:36.345[AbstractDetectingUrlHandlerMapping.java:86 :DEBUG] Rejected bean name 'mappingJacksonHttpMessageConverter': no URL paths identified
+56:36.345[AbstractDetectingUrlHandlerMapping.java:86 :DEBUG] Rejected bean name 'utf8StringHttpMessageConverter': no URL paths identified
+56:36.346[AbstractDetectingUrlHandlerMapping.java:86 :DEBUG] Rejected bean name 'viewResolver': no URL paths identified
+56:36.352[AbstractDetectingUrlHandlerMapping.java:86 :DEBUG] Rejected bean name 'org.springframework.web.servlet.i18n.LocaleChangeInterceptor#0': no URL paths identified
+56:36.352[AbstractDetectingUrlHandlerMapping.java:86 :DEBUG] Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0': no URL paths identified
+56:36.352[AbstractDetectingUrlHandlerMapping.java:86 :DEBUG] Rejected bean name 'servletConfig': no URL paths identified
+56:36.353[AbstractDetectingUrlHandlerMapping.java:86 :DEBUG] Rejected bean name 'importRegistry': no URL paths identified
+56:36.353[AbstractDetectingUrlHandlerMapping.java:86 :DEBUG] Rejected bean name 'messageSource': no URL paths identified
+56:36.353[AbstractDetectingUrlHandlerMapping.java:86 :DEBUG] Rejected bean name 'applicationEventMulticaster': no URL paths identified
+56:36.353[AbstractDetectingUrlHandlerMapping.java:86 :DEBUG] Rejected bean name 'lifecycleProcessor': no URL paths identified
+56:36.353[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+56:36.355[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping'
+56:36.380[AbstractDetectingUrlHandlerMapping.java:71 :DEBUG] Looking for URL mappings in application context: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Wed Jul 19 13:56:36 CST 2017]; parent: Root WebApplicationContext
+56:36.382[DefaultSingletonBeanRegistry.java:217:DEBUG] Creating shared instance of singleton bean 'xinHuaController'
+56:36.382[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'xinHuaController'
+56:36.384[AbstractAutowireCapableBeanFactory.java:504:DEBUG] Eagerly caching bean 'xinHuaController' to allow for resolving potential circular references
+56:36.388[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'xinHuaController'
+56:36.388[AbstractUrlHandlerMapping.java:314:INFO ] Mapped URL path [/xinhua/identity/isTokenValid] onto handler 'xinHuaController'
+56:36.390[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'xinHuaController'
+56:36.390[AbstractUrlHandlerMapping.java:314:INFO ] Mapped URL path [/xinhua/identity/isTokenValid.*] onto handler 'xinHuaController'
+56:36.390[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'xinHuaController'
+56:36.390[AbstractUrlHandlerMapping.java:314:INFO ] Mapped URL path [/xinhua/identity/isTokenValid/] onto handler 'xinHuaController'
+56:36.390[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'xinHuaController'
+56:36.390[AbstractUrlHandlerMapping.java:314:INFO ] Mapped URL path [/xinhua/bjca/appList] onto handler 'xinHuaController'
+56:36.391[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'xinHuaController'
+56:36.391[AbstractUrlHandlerMapping.java:314:INFO ] Mapped URL path [/xinhua/bjca/appList.*] onto handler 'xinHuaController'
+56:36.391[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'xinHuaController'
+56:36.391[AbstractUrlHandlerMapping.java:314:INFO ] Mapped URL path [/xinhua/bjca/appList/] onto handler 'xinHuaController'
+56:36.391[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'xinHuaController'
+56:36.391[AbstractUrlHandlerMapping.java:314:INFO ] Mapped URL path [/xinhua/identity/authenticate] onto handler 'xinHuaController'
+56:36.391[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'xinHuaController'
+56:36.391[AbstractUrlHandlerMapping.java:314:INFO ] Mapped URL path [/xinhua/identity/authenticate.*] onto handler 'xinHuaController'
+56:36.391[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'xinHuaController'
+56:36.392[AbstractUrlHandlerMapping.java:314:INFO ] Mapped URL path [/xinhua/identity/authenticate/] onto handler 'xinHuaController'
+56:36.392[DefaultSingletonBeanRegistry.java:217:DEBUG] Creating shared instance of singleton bean 'indexController'
+56:36.392[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'indexController'
+56:36.393[AbstractAutowireCapableBeanFactory.java:504:DEBUG] Eagerly caching bean 'indexController' to allow for resolving potential circular references
+56:36.393[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'indexController'
+56:36.393[AbstractUrlHandlerMapping.java:314:INFO ] Mapped URL path [/home/second] onto handler 'indexController'
+56:36.397[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'indexController'
+56:36.397[AbstractUrlHandlerMapping.java:314:INFO ] Mapped URL path [/home/second.*] onto handler 'indexController'
+56:36.397[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'indexController'
+56:36.398[AbstractUrlHandlerMapping.java:314:INFO ] Mapped URL path [/home/second/] onto handler 'indexController'
+56:36.398[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'indexController'
+56:36.398[AbstractUrlHandlerMapping.java:314:INFO ] Mapped URL path [/home/index] onto handler 'indexController'
+56:36.398[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'indexController'
+56:36.398[AbstractUrlHandlerMapping.java:314:INFO ] Mapped URL path [/home/index.*] onto handler 'indexController'
+56:36.399[AbstractBeanFactory.java:245:DEBUG] Returning cached instance of singleton bean 'indexController'
+56:36.399[AbstractUrlHandlerMapping.java:314:INFO ] Mapped URL path [/home/index/] onto handler 'indexController'
+56:36.399[AbstractDetectingUrlHandlerMapping.java:86 :DEBUG] Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+56:36.399[AbstractDetectingUrlHandlerMapping.java:86 :DEBUG] Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+56:36.400[AbstractDetectingUrlHandlerMapping.java:86 :DEBUG] Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+56:36.400[AbstractDetectingUrlHandlerMapping.java:86 :DEBUG] Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+56:36.400[AbstractDetectingUrlHandlerMapping.java:86 :DEBUG] Rejected bean name 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0': no URL paths identified
+56:36.401[AbstractDetectingUrlHandlerMapping.java:86 :DEBUG] Rejected bean name 'mappingJacksonHttpMessageConverter': no URL paths identified
+56:36.402[AbstractDetectingUrlHandlerMapping.java:86 :DEBUG] Rejected bean name 'utf8StringHttpMessageConverter': no URL paths identified
+56:36.402[AbstractDetectingUrlHandlerMapping.java:86 :DEBUG] Rejected bean name 'viewResolver': no URL paths identified
+56:36.402[AbstractDetectingUrlHandlerMapping.java:86 :DEBUG] Rejected bean name 'org.springframework.web.servlet.i18n.LocaleChangeInterceptor#0': no URL paths identified
+56:36.402[AbstractDetectingUrlHandlerMapping.java:86 :DEBUG] Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0': no URL paths identified
+56:36.402[AbstractDetectingUrlHandlerMapping.java:86 :DEBUG] Rejected bean name 'servletConfig': no URL paths identified
+56:36.403[AbstractDetectingUrlHandlerMapping.java:86 :DEBUG] Rejected bean name 'importRegistry': no URL paths identified
+56:36.404[AbstractDetectingUrlHandlerMapping.java:86 :DEBUG] Rejected bean name 'messageSource': no URL paths identified
+56:36.404[AbstractDetectingUrlHandlerMapping.java:86 :DEBUG] Rejected bean name 'applicationEventMulticaster': no URL paths identified
+56:36.408[AbstractDetectingUrlHandlerMapping.java:86 :DEBUG] Rejected bean name 'lifecycleProcessor': no URL paths identified
+56:36.408[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping'
+56:36.408[  DispatcherServlet.java:549:DEBUG] No HandlerMappings found in servlet 'dispatcher': using default
+56:36.409[DefaultSingletonBeanRegistry.java:217:DEBUG] Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+56:36.409[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+56:36.459[AbstractAutowireCapableBeanFactory.java:504:DEBUG] Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0' to allow for resolving potential circular references
+56:36.486[DefaultSingletonBeanRegistry.java:217:DEBUG] Creating shared instance of singleton bean 'mappingJacksonHttpMessageConverter'
+56:36.488[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'mappingJacksonHttpMessageConverter'
+56:36.723[AbstractAutowireCapableBeanFactory.java:504:DEBUG] Eagerly caching bean 'mappingJacksonHttpMessageConverter' to allow for resolving potential circular references
+56:36.745[AbstractEnvironment.java:114:DEBUG] Initializing new StandardEnvironment
+56:36.746[MutablePropertySources.java:104:DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+56:36.746[MutablePropertySources.java:104:DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+56:36.747[AbstractEnvironment.java:120:DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+56:36.753[AbstractEnvironment.java:114:DEBUG] Initializing new StandardEnvironment
+56:36.754[MutablePropertySources.java:104:DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+56:36.754[MutablePropertySources.java:104:DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+56:36.754[AbstractEnvironment.java:120:DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+56:36.755[AbstractEnvironment.java:114:DEBUG] Initializing new StandardEnvironment
+56:36.755[MutablePropertySources.java:104:DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+56:36.755[MutablePropertySources.java:104:DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+56:36.756[AbstractEnvironment.java:120:DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+56:36.757[AbstractEnvironment.java:114:DEBUG] Initializing new StandardEnvironment
+56:36.757[MutablePropertySources.java:104:DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+56:36.757[MutablePropertySources.java:104:DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+56:36.758[AbstractEnvironment.java:120:DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+56:36.759[AbstractEnvironment.java:114:DEBUG] Initializing new StandardEnvironment
+56:36.764[MutablePropertySources.java:104:DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+56:36.764[MutablePropertySources.java:104:DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+56:36.765[AbstractEnvironment.java:120:DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+56:36.769[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'mappingJacksonHttpMessageConverter'
+56:36.776[DefaultSingletonBeanRegistry.java:217:DEBUG] Creating shared instance of singleton bean 'utf8StringHttpMessageConverter'
+56:36.776[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'utf8StringHttpMessageConverter'
+56:36.780[AbstractAutowireCapableBeanFactory.java:504:DEBUG] Eagerly caching bean 'utf8StringHttpMessageConverter' to allow for resolving potential circular references
+56:36.786[AbstractEnvironment.java:114:DEBUG] Initializing new StandardEnvironment
+56:36.792[MutablePropertySources.java:104:DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+56:36.792[MutablePropertySources.java:104:DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+56:36.793[AbstractEnvironment.java:120:DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+56:36.793[AbstractEnvironment.java:114:DEBUG] Initializing new StandardEnvironment
+56:36.793[MutablePropertySources.java:104:DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+56:36.793[MutablePropertySources.java:104:DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+56:36.794[AbstractEnvironment.java:120:DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+56:36.794[AbstractEnvironment.java:114:DEBUG] Initializing new StandardEnvironment
+56:36.794[MutablePropertySources.java:104:DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+56:36.795[MutablePropertySources.java:104:DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+56:36.795[AbstractEnvironment.java:120:DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+56:36.795[AbstractEnvironment.java:114:DEBUG] Initializing new StandardEnvironment
+56:36.796[MutablePropertySources.java:104:DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+56:36.796[MutablePropertySources.java:104:DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+56:36.796[AbstractEnvironment.java:120:DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+56:36.800[AbstractEnvironment.java:114:DEBUG] Initializing new StandardEnvironment
+56:36.801[MutablePropertySources.java:104:DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+56:36.801[MutablePropertySources.java:104:DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+56:36.801[AbstractEnvironment.java:120:DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+56:36.802[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'utf8StringHttpMessageConverter'
+56:36.803[AbstractEnvironment.java:114:DEBUG] Initializing new StandardEnvironment
+56:36.804[MutablePropertySources.java:104:DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+56:36.808[MutablePropertySources.java:104:DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+56:36.809[AbstractEnvironment.java:120:DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+56:36.809[AbstractEnvironment.java:114:DEBUG] Initializing new StandardEnvironment
+56:36.810[MutablePropertySources.java:104:DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+56:36.811[MutablePropertySources.java:104:DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+56:36.811[AbstractEnvironment.java:120:DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+56:36.811[AbstractEnvironment.java:114:DEBUG] Initializing new StandardEnvironment
+56:36.812[MutablePropertySources.java:104:DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+56:36.812[MutablePropertySources.java:104:DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+56:36.813[AbstractEnvironment.java:120:DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+56:36.813[AbstractEnvironment.java:114:DEBUG] Initializing new StandardEnvironment
+56:36.814[MutablePropertySources.java:104:DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+56:36.814[MutablePropertySources.java:104:DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+56:36.814[AbstractEnvironment.java:120:DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+56:36.814[AbstractEnvironment.java:114:DEBUG] Initializing new StandardEnvironment
+56:36.817[MutablePropertySources.java:104:DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+56:36.817[MutablePropertySources.java:104:DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+56:36.817[AbstractEnvironment.java:120:DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+56:36.818[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+56:36.826[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver'
+56:36.842[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver'
+56:36.845[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver'
+56:36.858[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver'
+56:36.859[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver'
+56:36.870[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver'
+56:36.871[  DispatcherServlet.java:626:DEBUG] No HandlerExceptionResolvers found in servlet 'dispatcher': using default
+56:36.871[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+56:36.874[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+56:36.883[  DispatcherServlet.java:647:DEBUG] Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5360283a]
+56:36.883[DefaultSingletonBeanRegistry.java:217:DEBUG] Creating shared instance of singleton bean 'viewResolver'
+56:36.883[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'viewResolver'
+56:36.893[AbstractAutowireCapableBeanFactory.java:504:DEBUG] Eagerly caching bean 'viewResolver' to allow for resolving potential circular references
+56:36.915[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'viewResolver'
+56:36.917[AbstractAutowireCapableBeanFactory.java:430:DEBUG] Creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+56:36.929[AbstractAutowireCapableBeanFactory.java:458:DEBUG] Finished creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+56:36.930[  DispatcherServlet.java:709:DEBUG] Unable to locate FlashMapManager with name 'flashMapManager': using default [org.springframework.web.servlet.support.SessionFlashMapManager@76241318]
+56:36.930[   FrameworkServlet.java:523:DEBUG] Published WebApplicationContext of servlet 'dispatcher' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.dispatcher]
+56:36.930[   FrameworkServlet.java:463:INFO ] FrameworkServlet 'dispatcher': initialization completed in 841 ms
+56:36.930[    HttpServletBean.java:136:DEBUG] Servlet 'dispatcher' configured successfully
+57:48.797[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/identity/authenticate]
+57:48.801[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/identity/authenticate] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+57:48.804[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/identity/authenticate] is: -1
+57:48.822[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.authenticate(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+57:48.875[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+57:48.881[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+57:48.906[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/identity/isTokenValid]
+57:48.908[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/identity/isTokenValid] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+57:48.908[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/identity/isTokenValid] is: -1
+57:48.909[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.isTokenValid(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+57:48.910[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+57:48.910[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+57:48.944[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/bjca/appList]
+57:48.945[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/bjca/appList] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+57:48.945[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/bjca/appList] is: -1
+57:48.947[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.appList(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+57:48.955[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+57:48.955[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+59:03.013[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/identity/authenticate]
+59:03.014[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/identity/authenticate] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+59:03.014[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/identity/authenticate] is: -1
+59:03.015[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.authenticate(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+59:03.020[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+59:03.020[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+59:03.039[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/identity/isTokenValid]
+59:03.039[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/identity/isTokenValid] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+59:03.039[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/identity/isTokenValid] is: -1
+59:03.040[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.isTokenValid(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+59:03.044[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+59:03.045[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+59:03.061[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/bjca/appList]
+59:03.062[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/bjca/appList] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+59:03.062[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/bjca/appList] is: -1
+59:03.062[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.appList(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+59:03.063[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+59:03.063[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+59:27.016[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/identity/authenticate]
+59:27.017[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/identity/authenticate] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+59:27.017[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/identity/authenticate] is: -1
+59:27.018[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.authenticate(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+59:27.018[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+59:27.018[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+59:27.034[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/identity/isTokenValid]
+59:27.034[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/identity/isTokenValid] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+59:27.034[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/identity/isTokenValid] is: -1
+59:27.035[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.isTokenValid(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+59:27.035[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+59:27.035[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+59:27.059[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/bjca/appList]
+59:27.060[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/bjca/appList] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+59:27.060[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/bjca/appList] is: -1
+59:27.061[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.appList(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+59:27.062[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+59:27.062[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+00:36.870[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/identity/authenticate]
+00:36.871[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/identity/authenticate] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+00:36.871[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/identity/authenticate] is: -1
+00:36.875[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.authenticate(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+00:36.877[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+00:36.877[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+00:36.895[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/identity/isTokenValid]
+00:36.895[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/identity/isTokenValid] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+00:36.895[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/identity/isTokenValid] is: -1
+00:36.896[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.isTokenValid(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+00:36.896[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+00:36.896[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+00:36.912[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/bjca/appList]
+00:36.912[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/bjca/appList] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+00:36.912[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/bjca/appList] is: -1
+00:36.913[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.appList(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+00:36.913[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+00:36.913[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+44:07.292[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/home/index]
+44:07.293[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/home/index] to HandlerExecutionChain with handler [com.demo.web.IndexController@491ecab] and 1 interceptor
+44:07.293[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/home/index] is: -1
+44:07.294[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.IndexController.index(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+44:07.323[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+44:07.323[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+22:24.251[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/identity/authenticate]
+22:24.252[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/identity/authenticate] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+22:24.252[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/identity/authenticate] is: -1
+22:24.261[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.authenticate(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+22:24.261[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+22:24.261[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+22:24.362[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/identity/isTokenValid]
+22:24.362[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/identity/isTokenValid] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+22:24.372[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/identity/isTokenValid] is: -1
+22:24.374[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.isTokenValid(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+22:24.374[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+22:24.374[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+22:24.401[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/bjca/appList]
+22:24.401[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/bjca/appList] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+22:24.401[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/bjca/appList] is: -1
+22:24.402[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.appList(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+22:24.402[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+22:24.402[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+33:19.035[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/identity/authenticate]
+33:19.036[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/identity/authenticate] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+33:19.036[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/identity/authenticate] is: -1
+33:19.037[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.authenticate(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+33:19.038[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+33:19.038[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+33:19.159[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/identity/isTokenValid]
+33:19.160[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/identity/isTokenValid] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+33:19.160[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/identity/isTokenValid] is: -1
+33:19.161[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.isTokenValid(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+33:19.161[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+33:19.161[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+33:19.192[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/bjca/appList]
+33:19.193[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/bjca/appList] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+33:19.194[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/bjca/appList] is: -1
+33:19.195[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.appList(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+33:19.195[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+33:19.195[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+39:50.370[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/identity/authenticate]
+39:50.371[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/identity/authenticate] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+39:50.371[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/identity/authenticate] is: -1
+39:50.372[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.authenticate(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+39:50.376[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+39:50.376[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+39:50.433[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/identity/isTokenValid]
+39:50.434[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/identity/isTokenValid] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+39:50.434[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/identity/isTokenValid] is: -1
+39:50.435[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.isTokenValid(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+39:50.435[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+39:50.435[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+39:50.486[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/bjca/appList]
+39:50.487[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/bjca/appList] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+39:50.487[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/bjca/appList] is: -1
+39:50.487[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.appList(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+39:50.488[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+39:50.488[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+40:02.219[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/identity/authenticate]
+40:02.220[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/identity/authenticate] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+40:02.224[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/identity/authenticate] is: -1
+40:02.225[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.authenticate(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+40:02.225[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+40:02.225[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+40:02.274[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/identity/isTokenValid]
+40:02.274[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/identity/isTokenValid] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+40:02.274[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/identity/isTokenValid] is: -1
+40:02.275[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.isTokenValid(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+40:02.275[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+40:02.275[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+40:02.319[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/bjca/appList]
+40:02.320[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/bjca/appList] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+40:02.320[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/bjca/appList] is: -1
+40:02.320[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.appList(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+40:02.321[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+40:02.321[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+47:23.491[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/identity/authenticate]
+47:23.491[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/identity/authenticate] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+47:23.491[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/identity/authenticate] is: -1
+47:23.492[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.authenticate(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+47:23.494[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+47:23.494[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+47:23.515[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/identity/isTokenValid]
+47:23.515[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/identity/isTokenValid] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+47:23.515[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/identity/isTokenValid] is: -1
+47:23.516[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.isTokenValid(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+47:23.516[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+47:23.516[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+47:23.532[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/bjca/appList]
+47:23.532[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/bjca/appList] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+47:23.532[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/bjca/appList] is: -1
+47:23.532[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.appList(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+47:23.533[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+47:23.533[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+30:01.974[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/identity/authenticate]
+30:01.974[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/identity/authenticate] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+30:01.975[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/identity/authenticate] is: -1
+30:01.975[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.authenticate(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+30:01.976[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+30:01.976[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+30:02.086[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/identity/isTokenValid]
+30:02.086[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/identity/isTokenValid] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+30:02.086[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/identity/isTokenValid] is: -1
+30:02.087[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.isTokenValid(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+30:02.087[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+30:02.087[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+30:02.155[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/bjca/appList]
+30:02.155[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/bjca/appList] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+30:02.155[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/bjca/appList] is: -1
+30:02.156[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.appList(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+30:02.156[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+30:02.156[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+30:16.717[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/identity/authenticate]
+30:16.717[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/identity/authenticate] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+30:16.717[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/identity/authenticate] is: -1
+30:16.718[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.authenticate(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+30:16.718[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+30:16.718[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+30:16.734[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/identity/isTokenValid]
+30:16.734[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/identity/isTokenValid] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+30:16.734[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/identity/isTokenValid] is: -1
+30:16.735[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.isTokenValid(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+30:16.735[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+30:16.735[   FrameworkServlet.java:913:DEBUG] Successfully completed request
+30:16.748[  DispatcherServlet.java:819:DEBUG] DispatcherServlet with name 'dispatcher' processing GET request for [/Demo/xinhua/bjca/appList]
+30:16.748[AbstractUrlHandlerMapping.java:124:DEBUG] Mapping [/xinhua/bjca/appList] to HandlerExecutionChain with handler [com.demo.web.xinhua.XinHuaController@7d7061d8] and 1 interceptor
+30:16.749[  DispatcherServlet.java:902:DEBUG] Last-Modified value for [/Demo/xinhua/bjca/appList] is: -1
+30:16.749[HandlerMethodInvoker.java:173:DEBUG] Invoking request handler method: public void com.demo.web.xinhua.XinHuaController.appList(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+30:16.749[  DispatcherServlet.java:957:DEBUG] Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+30:16.749[   FrameworkServlet.java:913:DEBUG] Successfully completed request

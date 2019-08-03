@@ -1,0 +1,3 @@
+16-Aug-2017 22:45:31.253 INFO [localhost-startStop-3] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'dispatcher'
+16-Aug-2017 22:45:31.256 INFO [localhost-startStop-3] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+16-Aug-2017 22:45:31.364 INFO [localhost-startStop-3] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext

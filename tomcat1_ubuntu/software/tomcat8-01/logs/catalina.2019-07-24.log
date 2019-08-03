@@ -1,0 +1,174 @@
+24-Jul-2019 16:47:14.248 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.14
+24-Jul-2019 16:47:14.316 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Apr 13 2017 12:55:45 UTC
+24-Jul-2019 16:47:14.316 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.14.0
+24-Jul-2019 16:47:14.316 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+24-Jul-2019 16:47:14.316 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.4.0-143-generic
+24-Jul-2019 16:47:14.316 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Jul-2019 16:47:14.317 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /home/zule/jdk1.8/jre
+24-Jul-2019 16:47:14.317 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_131-b11
+24-Jul-2019 16:47:14.319 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Jul-2019 16:47:14.319 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/zule/dockerfiles/tomcat1_ubuntu/software/tomcat8-01
+24-Jul-2019 16:47:14.319 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/zule/dockerfiles/tomcat1_ubuntu/software/tomcat8-01
+24-Jul-2019 16:47:14.319 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/zule/dockerfiles/tomcat1_ubuntu/software/tomcat8-01/conf/logging.properties
+24-Jul-2019 16:47:14.319 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Jul-2019 16:47:14.319 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+24-Jul-2019 16:47:14.319 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Jul-2019 16:47:14.319 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/zule/dockerfiles/tomcat1_ubuntu/software/tomcat8-01
+24-Jul-2019 16:47:14.320 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/zule/dockerfiles/tomcat1_ubuntu/software/tomcat8-01
+24-Jul-2019 16:47:14.320 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/zule/dockerfiles/tomcat1_ubuntu/software/tomcat8-01/temp
+24-Jul-2019 16:47:14.320 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+24-Jul-2019 16:47:15.000 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+24-Jul-2019 16:47:15.059 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+24-Jul-2019 16:47:15.067 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+24-Jul-2019 16:47:15.068 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+24-Jul-2019 16:47:15.069 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2584 ms
+24-Jul-2019 16:47:15.116 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+24-Jul-2019 16:47:15.116 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.14
+24-Jul-2019 16:47:15.140 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+24-Jul-2019 16:47:15.168 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+24-Jul-2019 16:47:15.176 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 106 ms
+24-Jul-2019 17:07:32.328 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.14
+24-Jul-2019 17:07:32.331 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Apr 13 2017 12:55:45 UTC
+24-Jul-2019 17:07:32.331 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.14.0
+24-Jul-2019 17:07:32.335 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+24-Jul-2019 17:07:32.335 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.4.0-143-generic
+24-Jul-2019 17:07:32.336 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Jul-2019 17:07:32.336 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /home/zule/jdk1.8/jre
+24-Jul-2019 17:07:32.336 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_131-b11
+24-Jul-2019 17:07:32.336 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Jul-2019 17:07:32.337 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/zule/dockerfiles/tomcat1_ubuntu/software/tomcat8-01
+24-Jul-2019 17:07:32.337 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/zule/dockerfiles/tomcat1_ubuntu/software/tomcat8-01
+24-Jul-2019 17:07:32.337 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/zule/dockerfiles/tomcat1_ubuntu/software/tomcat8-01/conf/logging.properties
+24-Jul-2019 17:07:32.338 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Jul-2019 17:07:32.338 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+24-Jul-2019 17:07:32.338 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Jul-2019 17:07:32.339 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/zule/dockerfiles/tomcat1_ubuntu/software/tomcat8-01
+24-Jul-2019 17:07:32.339 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/zule/dockerfiles/tomcat1_ubuntu/software/tomcat8-01
+24-Jul-2019 17:07:32.339 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/zule/dockerfiles/tomcat1_ubuntu/software/tomcat8-01/temp
+24-Jul-2019 17:07:32.340 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+24-Jul-2019 17:07:32.585 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+24-Jul-2019 17:07:32.618 SEVERE [main] org.apache.coyote.AbstractProtocol.init Failed to initialize end point associated with ProtocolHandler ["http-nio-8080"]
+ java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:970)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:244)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:613)
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:66)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:968)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:549)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:875)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:630)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:311)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:494)
+
+24-Jul-2019 17:07:32.619 SEVERE [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[HTTP/1.1-8080]]
+ org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:112)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:549)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:875)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:630)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:311)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:494)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:970)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	... 12 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:970)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:244)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:613)
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:66)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:968)
+	... 13 more
+
+24-Jul-2019 17:07:32.625 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+24-Jul-2019 17:07:32.629 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+24-Jul-2019 17:07:32.637 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1015 ms
+24-Jul-2019 17:07:32.679 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+24-Jul-2019 17:07:32.683 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.14
+24-Jul-2019 17:07:32.701 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+24-Jul-2019 17:07:32.732 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 94 ms
+24-Jul-2019 17:10:08.387 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.14
+24-Jul-2019 17:10:08.393 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Apr 13 2017 12:55:45 UTC
+24-Jul-2019 17:10:08.393 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.14.0
+24-Jul-2019 17:10:08.394 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+24-Jul-2019 17:10:08.394 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.4.0-143-generic
+24-Jul-2019 17:10:08.394 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Jul-2019 17:10:08.394 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /home/zule/jdk1.8/jre
+24-Jul-2019 17:10:08.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_131-b11
+24-Jul-2019 17:10:08.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Jul-2019 17:10:08.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/zule/dockerfiles/tomcat1_ubuntu/software/tomcat8-01
+24-Jul-2019 17:10:08.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/zule/dockerfiles/tomcat1_ubuntu/software/tomcat8-01
+24-Jul-2019 17:10:08.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/zule/dockerfiles/tomcat1_ubuntu/software/tomcat8-01/conf/logging.properties
+24-Jul-2019 17:10:08.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Jul-2019 17:10:08.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+24-Jul-2019 17:10:08.397 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Jul-2019 17:10:08.397 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/zule/dockerfiles/tomcat1_ubuntu/software/tomcat8-01
+24-Jul-2019 17:10:08.397 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/zule/dockerfiles/tomcat1_ubuntu/software/tomcat8-01
+24-Jul-2019 17:10:08.398 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/zule/dockerfiles/tomcat1_ubuntu/software/tomcat8-01/temp
+24-Jul-2019 17:10:08.398 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+24-Jul-2019 17:10:08.650 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8081"]
+24-Jul-2019 17:10:08.684 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+24-Jul-2019 17:10:08.687 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+24-Jul-2019 17:10:08.690 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+24-Jul-2019 17:10:08.695 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 992 ms
+24-Jul-2019 17:10:08.734 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+24-Jul-2019 17:10:08.739 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.14
+24-Jul-2019 17:10:08.756 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8081"]
+24-Jul-2019 17:10:08.787 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+24-Jul-2019 17:10:08.807 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 111 ms
+24-Jul-2019 17:17:29.393 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.14
+24-Jul-2019 17:17:29.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Apr 13 2017 12:55:45 UTC
+24-Jul-2019 17:17:29.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.14.0
+24-Jul-2019 17:17:29.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+24-Jul-2019 17:17:29.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.4.0-143-generic
+24-Jul-2019 17:17:29.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Jul-2019 17:17:29.399 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /home/zule/jdk1.8/jre
+24-Jul-2019 17:17:29.399 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_131-b11
+24-Jul-2019 17:17:29.399 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Jul-2019 17:17:29.400 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/zule/dockerfiles/tomcat1_ubuntu/software/tomcat8-01
+24-Jul-2019 17:17:29.400 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/zule/dockerfiles/tomcat1_ubuntu/software/tomcat8-01
+24-Jul-2019 17:17:29.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/zule/dockerfiles/tomcat1_ubuntu/software/tomcat8-01/conf/logging.properties
+24-Jul-2019 17:17:29.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Jul-2019 17:17:29.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+24-Jul-2019 17:17:29.402 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Jul-2019 17:17:29.402 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/zule/dockerfiles/tomcat1_ubuntu/software/tomcat8-01
+24-Jul-2019 17:17:29.402 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/zule/dockerfiles/tomcat1_ubuntu/software/tomcat8-01
+24-Jul-2019 17:17:29.402 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/zule/dockerfiles/tomcat1_ubuntu/software/tomcat8-01/temp
+24-Jul-2019 17:17:29.403 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+24-Jul-2019 17:17:29.665 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8081"]
+24-Jul-2019 17:17:29.700 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+24-Jul-2019 17:17:29.707 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+24-Jul-2019 17:17:29.710 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+24-Jul-2019 17:17:29.715 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1051 ms
+24-Jul-2019 17:17:29.759 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+24-Jul-2019 17:17:29.761 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.14
+24-Jul-2019 17:17:29.782 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8081"]
+24-Jul-2019 17:17:29.816 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+24-Jul-2019 17:17:29.834 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 118 ms
