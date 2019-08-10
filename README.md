@@ -170,7 +170,7 @@ exit 0
 
 ![enter description here](https://github.com/grandhappy/docker/blob/master/pic/5.png)
 
-## *只要工夫深,铁杵磨成针*
+# *只要工夫深,铁杵磨成针*
 在上面章节内容，不知道大家在实操过程中有没有发现比较严重的问题。比如客户拿到黑盒执行的时间非常长；源程序和服务能不能分离等等。下面我们针对这两个鸡肋问题进行优化升级。
 ### 1.缩短黑盒执行时间
 黑盒里我们都干了什么？仔细研究一下install.sh我们就会发现，无非就是一下几个动作。
@@ -232,11 +232,12 @@ exit 0
 ### 2.程序和服务分离
 截止到目前为止，我们没有关心过程序，是因为我们举例的程序仅仅是一个index.html，部署在tomcat容器中。现实生活中的服务远超乎我们的想象。往往在我们的开发过程中，涉及到的构建流程有开发、编译、测试、发布等。如果每当发布程序都需要重新打包，那将是多么脑瓜疼的事情。
 - 抽离代码
-![enter description here](https://github.com/grandhappy/docker/blob/master/images/10.png)
- <i class="far fa-folder"></i>tar目录: 用于存放本地镜像文件（与上一节一样）。
- <i class="far fa-folder"></i>code目录: 用于存放编译后的代码。
- <i class="far fa-file"></i>install文件：执行bin包的shell脚本。
- >vim code/index.html
+ 
+![enter description here](https://github.com/grandhappy/docker/blob/master/pic/10.png)
+　　tar目录: 用于存放本地镜像文件（与上一节一样）。
+　　code目录: 用于存放编译后的代码。
+　　install文件：执行bin包的shell脚本。
+> vim code/index.html
 ```
 <!DOCTYPE html>
 <html>
@@ -250,9 +251,9 @@ exit 0
 </html>
 
 ```
-- 制作bin包
->tar -cvzf dragonball_3.1.tar.gz code/ tar/
->vim install.sh
++ 制作bin包
+> tar -cvzf dragonball_3.1.tar.gz code/ tar/
+> vim install.sh
 ```
 #!/bin/bash  
 dir_tmp=/home/zule/tmp/git/docker/docker_3.1/install  
@@ -280,15 +281,18 @@ docker run -d -ti --name nginx -p 81:81 --link tomcat01:tomcat01_link --link tom
 
 exit 0  
 ```
->cat install.sh dragonball_3.1.tar.gz > dragonball_3.1.bin
-- 执行bin包
->sh ./dragonball_2.0.binsh ./dragonball_3.1.bin
-- 测试
-![enter description here](https://github.com/grandhappy/docker/blob/master/images/4.png)
-- 修改代码
+> cat install.sh dragonball_3.1.tar.gz > dragonball_3.1.bin
++ 执行bin包
+> sh ./dragonball_2.0.binsh ./dragonball_3.1.bin
++ 测试
+ 
+![enter description here](https://github.com/grandhappy/docker/blob/master/pic/4.png)
++ 修改代码
 > pwd
-![enter description here](https://github.com/grandhappy/docker/blob/master/images/11.png)
+ 
+![enter description here](https://github.com/grandhappy/docker/blob/master/pic/11.png)
 > vim index.html
+
 ```
 <!DOCTYPE html>
 <html>
@@ -301,5 +305,7 @@ exit 0
 </body>
 </html>
 ```
-- 测试
-![enter description here](https://github.com/grandhappy/docker/blob/master/images/12.png)
+
++ 测试
+ 
+![enter description here](https://github.com/grandhappy/docker/blob/master/pic/12.png)
