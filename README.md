@@ -104,7 +104,7 @@ CMD ["/opt/run.sh"]
  
 ### 创建容器
 >docker run –d –it --name tomcat01 tomcat01:1.0  
->docker run –d –it --name tomcat01 tomcat02:1.0  
+>docker run –d –it --name tomcat02 tomcat02:1.0  
 >docker run -d -ti --name nginx -p 81:81 --link tomcat01:tomcat01_link --link tomcat02:tomcat02_link nginx:1.0  
 ### 测试
 打开浏览器进行测试
