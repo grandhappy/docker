@@ -170,3 +170,61 @@ exit 0
 
 ![enter description here](https://github.com/grandhappy/docker/blob/master/images/5.png)
 
+## *只要工夫深,铁杵磨成针*
+在上面章节内容，不知道大家在实操过程中有没有发现比较严重的问题。比如客户拿到黑盒执行的时间非常长；源程序和服务能不能分离等等。下面我们针对这两个鸡肋问题进行优化升级。
+### 1.缩短黑盒执行时间
+黑盒里我们都干了什么？仔细研究一下install.sh我们就会发现，无非就是一下几个动作。
+ 　　1. 构建镜像 
+ 　　2. 创建容器 
+ 　　3. 启动服务
+ 在bin包执行的过程中我们会发现，第一步的执行时间最长，因为构建镜像的过程中，实际去docker的远程仓库下载各种软件包。第二步、三步，执行比较快，因为都是在本地完成。依据“木桶原则”，只需优化第一步就会立竿见影！如何解决这个问题呢？答案有两个，其一，搭建一套本地仓库，依赖从本地仓库下载；其二，提前构建好我们的镜像。显然第二种更来自实在。
+ - 导出镜像tar文件
+ > docker images  
+ 
+![enter description here](https://github.com/grandhappy/docker/blob/master/images/7.png)
+ >docker save -o /home/zule/tmp/git/docker/docker_3.0/tomcat01_1.0.tar tomcat01:1.0  
+ >docker save -o /home/zule/tmp/git/docker/docker_3.0/tomcat02_1.0.tar tomcat02:1.0
+ >docker save -o /home/zule/tmp/git/docker/docker_3.0/nginx_1.0.tar nginx:1.0
+ 
+![enter description here](https://github.com/grandhappy/docker/blob/master/images/8.png)
+ - 构建bin包
+ >tar -cvzf dragonball_2.0.tar.gz nginx_1.0.tar  tomcat01_1.0.tar  tomcat02_1.0.tar
+ >vim install.sh
+```
+#!/bin/bash  
+dir_tmp=/home/zule/tmp/git/docker/docker_3.0/install  
+mkdir $dir_tmp  
+#将bin中的二进制文件分离出来  
+sed -n -e '1,/^exit 0$/!p' $0 > "${dir_tmp}/dragonball_2.0.tar.gz" 2>/dev/null  
+
+#解压  
+cd $dir_tmp  
+tar -xvf dragonball_2.0.tar.gz  
+  
+#加载镜像  
+docker load -i tomcat01_1.0.tar  
+docker load -i tomcat02_1.0.tar  
+docker load -i nginx_1.0.tar  
+
+#生成容器并运行  
+docker run -d -it --name tomcat01 tomcat01:1.0  
+docker run -d -it --name tomcat02 tomcat02:1.0  
+docker run -d -ti --name nginx -p 81:81 --link tomcat01:tomcat01_link --link tomcat02:tomcat02_link nginx:1.0  
+
+exit 0  
+```
+
+>cat install.sh dragonball_2.0.tar.gz > dragonball_2.0.bin
+- 执行bin包
+> docker stop $(docker ps -qa)
+> docker rm $(docker ps -qa)
+> docker rmi $(docker images -q)
+> sh ./dragonball_2.0.bin
+
+![enter description here](https://github.com/grandhappy/docker/blob/master/images/9.png)
+ - 测试
+ 打开浏览器进行测试
+
+![enter description here](https://github.com/grandhappy/docker/blob/master/images/4.png)
+
+![enter description here](https://github.com/grandhappy/docker/blob/master/images/5.png)
