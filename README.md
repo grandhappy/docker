@@ -236,7 +236,9 @@ exit 0
 ![enter description here](https://github.com/grandhappy/docker/blob/master/pic/10.png)
 
  tar目录: 用于存放本地镜像文件（与上一节一样）。
+ 
  code目录: 用于存放编译后的代码。
+ 
  install文件：执行bin包的shell脚本。
   
 > vim code/index.html
