@@ -117,4 +117,56 @@ CMD ["/opt/run.sh"]
 docker run –t –it --name tomcat01 tomcat01:1.0 /bin/bash，会覆盖cmd，应该去掉/bin/bash
 #### 2.容器互通互联
 docker run –t –id –name nginx –link tomcat01:tomcat01_link，使用—link，在容器内建立会建立hosts
-![enter description here](https://github.com/grandhappy/docker/blob/master/images/6.png)
+![enter description here](https://github.com/grandhappy/docker/blob/master/images/6.png
+
+## *百尺竿头更进一步*
+从实际出发让我们对上一节成果继续优化
+如果客户想要的产品是苹果，有2个方案，一个是提供种子、水、肥料原材料，然后去客户的田园种苹果；另一个是在自己的田园播种，待开花结果之后，把苹果卖给客户。客户最关系的是能够吃到苹果，而不是怎么种苹果树。
+### 1.bin包
+我们可以把构建镜像、创建容器、配置服务、启动服务等一系列的操作放到黑盒里，并再黑盒子设计一个启动按钮。当客户拿到这个黑盒子时，仅仅需要点击启动按钮，我们的产品就会最终效果呈现出来。
+
+- 构建bin包
+
+> cd docker_1.0  
+> tar -cvzf dragonBall.tar.gz nginx_ubuntu1 tomcat1_ubuntu   tomcat2_ubuntu
+> vim install.sh  
+> cat install.sh dragonball_1.0.tar.gz > dragonball_1.0.bin  
+> chmod +x dragonball_1.0.bin  
+```
+#!/bin/bash  
+dir_tmp=/home/zule/dockerfiles/bin/install  
+mkdir $dir_tmp  
+#将bin中的二进制文件分离出来  
+sed -n -e '1,/^exit 0$/!p' $0 > "${dir_tmp}/dragonball_1.0.tar.gz" 2>/dev/null  
+
+#解压  
+cd $dir_tmp  
+tar -xvf dragonball_1.0.tar.gz  
+  
+#构建镜像  
+cd $dir_tmp/tomcat1_ubuntu/  
+pwd  
+docker build -t tomcat01:1.0 .  
+cd $dir_tmp/tomcat2_ubuntu/  
+docker build -t tomcat02:1.0 .  
+cd $dir_tmp/nginx_ubuntu/  
+docker build -t nginx:1.0 .  
+  
+#生成容器并运行  
+docker run -d -it --name tomcat01 tomcat01:1.0  
+docker run -d -it --name tomcat02 tomcat02:1.0  
+docker run -d -ti --name nginx -p 81:81 --link tomcat01:tomcat01_link --link tomcat02:tomcat02_link nginx:1.0  
+  
+exit 0  
+```
+成功生成了我们的黑盒，dragonball_1.0.bin。
+- 启动
+客户拿到黑盒，如何启动黑盒？只需要执行下边命令即可。
+> ./dragonball_1.0.bin  
+- 测试
+打开浏览器进行测试
+
+![enter description here](https://github.com/grandhappy/docker/blob/master/images/4.png)
+
+![enter description here](https://github.com/grandhappy/docker/blob/master/images/5.png)
+
