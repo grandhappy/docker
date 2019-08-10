@@ -228,3 +228,78 @@ exit 0
 ![enter description here](https://github.com/grandhappy/docker/blob/master/pic/4.png)
 
 ![enter description here](https://github.com/grandhappy/docker/blob/master/pic/5.png)
+
+### 2.程序和服务分离
+截止到目前为止，我们没有关心过程序，是因为我们举例的程序仅仅是一个index.html，部署在tomcat容器中。现实生活中的服务远超乎我们的想象。往往在我们的开发过程中，涉及到的构建流程有开发、编译、测试、发布等。如果每当发布程序都需要重新打包，那将是多么脑瓜疼的事情。
+- 抽离代码
+![enter description here](https://github.com/grandhappy/docker/blob/master/images/10.png)
+ <i class="far fa-folder"></i>tar目录: 用于存放本地镜像文件（与上一节一样）。
+ <i class="far fa-folder"></i>code目录: 用于存放编译后的代码。
+ <i class="far fa-file"></i>install文件：执行bin包的shell脚本。
+ >vim code/index.html
+```
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>docker</title>
+</head>
+<body>
+    <h1>hello docker!</h1>
+</body>
+</html>
+
+```
+- 制作bin包
+>tar -cvzf dragonball_3.1.tar.gz code/ tar/
+>vim install.sh
+```
+#!/bin/bash  
+dir_tmp=/home/zule/tmp/git/docker/docker_3.1/install  
+mkdir $dir_tmp  
+#将bin中的二进制文件分离出来  
+sed -n -e '1,/^exit 0$/!p' $0 > "${dir_tmp}/dragonball_3.1.tar.gz" 2>/dev/null  
+
+#解压  
+cd $dir_tmp  
+tar -xvf dragonball_3.1.tar.gz  
+
+#加载镜像  
+echo '-----加载镜像-----'  
+docker load -i $dir_tmp/tar/tomcat01_1.0.tar  
+docker load -i $dir_tmp/tar/tomcat02_1.0.tar  
+docker load -i $dir_tmp/tar/nginx_1.0.tar  
+
+mkdir -p /home/zule/tmp/git/docker/docker_3.1/logs  
+
+#生成容器并运行  
+echo '-------启动容器------'  
+docker run -d -it --name tomcat01 -v  /home/zule/tmp/git/docker/docker_3.1/install/code:/tomcat/webapps -v /home/zule/tmp/git/docker/docker_3.1/logs:/tomcat/logs tomcat01:1.0   
+docker run -d -it --name tomcat02 -v home/zule/tmp/git/docker/docker_3.1/install/code:/tomcat/webapps -v /home/zule/tmp/git/docker/docker_3.1/logs:/tomcat/logs tomcat02:1.0  
+docker run -d -ti --name nginx -p 81:81 --link tomcat01:tomcat01_link --link tomcat02:tomcat02_link nginx:1.0  
+
+exit 0  
+```
+>cat install.sh dragonball_3.1.tar.gz > dragonball_3.1.bin
+- 执行bin包
+>sh ./dragonball_2.0.binsh ./dragonball_3.1.bin
+- 测试
+![enter description here](https://github.com/grandhappy/docker/blob/master/images/4.png)
+- 修改代码
+> pwd
+![enter description here](https://github.com/grandhappy/docker/blob/master/images/11.png)
+> vim index.html
+```
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>docker</title>
+</head>
+<body>
+    <h1>hello docker3.1!</h1>
+</body>
+</html>
+```
+- 测试
+![enter description here](https://github.com/grandhappy/docker/blob/master/images/12.png)
