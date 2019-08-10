@@ -1,6 +1,6 @@
  # Docker容器化
  
- ![enter description here](https://github.com/grandhappy/docker/blob/master/images/0.png)
+ ![enter description here](https://github.com/grandhappy/docker/blob/master/pic/0.png)
 
 以nginx+tomcat集群为例进行说明，如何搭建服务，常规的方式是下载、安装、配置、部署代码。如何简化这些操作呢，这次我们提供了利用docker容器化这些服务，从而降低软件迁移所带来的困扰，减少了重复安装、配置、部署等。
 
@@ -10,7 +10,7 @@
 #### 1.1制作tomcat01镜像
 - 创建相应目录，下载jdk和tomcat
 
-![enter description here](https://github.com/grandhappy/docker/blob/master/images/1.png)
+![enter description here](https://github.com/grandhappy/docker/blob/master/pic/1.png)
 > <i class="far fa-folder"></i>code目录: 用于存放我们的服务源代码，源程序是index.html。
 > <i class="far fa-folder"></i>shell目录: 用于存放我们的sh脚本，启动tomcat服务。
 > <i class="far fa-folder"></i>software目录: 用于存放运行服务的软件，例如jdk和tomcat。
@@ -62,7 +62,7 @@ CMD ["/run.sh"]
 #### 1.3制作nginx镜像
 - 创建相应目录，下载nginx安装包
 
-![enter description here](https://github.com/grandhappy/docker/blob/master/images/2.png)
+![enter description here](https://github.com/grandhappy/docker/blob/master/pic/2.png)
 - 编写Dockerfile内容
 ```
 #继承镜像
@@ -98,7 +98,7 @@ CMD ["/opt/run.sh"]
 - 修改nginx配置
 > vim nginx/conf/nginx.conf
  
-![enter description here](https://github.com/grandhappy/docker/blob/master/images/3.png)
+![enter description here](https://github.com/grandhappy/docker/blob/master/pic/3.png)
 - 制作镜像：进入nginx_ubuntu目录下，执行docker builder命令
 >docker builder –t nginx:1.0 .
  
@@ -109,15 +109,15 @@ CMD ["/opt/run.sh"]
 ### 测试
 打开浏览器进行测试
 
-![enter description here](https://github.com/grandhappy/docker/blob/master/images/4.png)
+![enter description here](https://github.com/grandhappy/docker/blob/master/pic/4.png)
 
-![enter description here](https://github.com/grandhappy/docker/blob/master/images/5.png)
+![enter description here](https://github.com/grandhappy/docker/blob/master/pic/5.png)
 ### 疑问
 #### 1.Dockerfile CMD指令不执行？
 docker run –t –it --name tomcat01 tomcat01:1.0 /bin/bash，会覆盖cmd，应该去掉/bin/bash
 #### 2.容器互通互联
 docker run –t –id –name nginx –link tomcat01:tomcat01_link，使用—link，在容器内建立会建立hosts
-![enter description here](https://github.com/grandhappy/docker/blob/master/images/6.png
+![enter description here](https://github.com/grandhappy/docker/blob/master/pic/6.png
 
 # *百尺竿头更进一步*
 从实际出发让我们对上一节成果继续优化
@@ -166,9 +166,9 @@ exit 0
 + 测试
 打开浏览器进行测试
 
-![enter description here](https://github.com/grandhappy/docker/blob/master/images/4.png)
+![enter description here](https://github.com/grandhappy/docker/blob/master/pic/4.png)
 
-![enter description here](https://github.com/grandhappy/docker/blob/master/images/5.png)
+![enter description here](https://github.com/grandhappy/docker/blob/master/pic/5.png)
 
 ## *只要工夫深,铁杵磨成针*
 在上面章节内容，不知道大家在实操过程中有没有发现比较严重的问题。比如客户拿到黑盒执行的时间非常长；源程序和服务能不能分离等等。下面我们针对这两个鸡肋问题进行优化升级。
@@ -181,12 +181,12 @@ exit 0
  - 导出镜像tar文件
  > docker images  
  
-![enter description here](https://github.com/grandhappy/docker/blob/master/images/7.png)
+![enter description here](https://github.com/grandhappy/docker/blob/master/pic/7.png)
  >docker save -o /home/zule/tmp/git/docker/docker_3.0/tomcat01_1.0.tar tomcat01:1.0  
  >docker save -o /home/zule/tmp/git/docker/docker_3.0/tomcat02_1.0.tar tomcat02:1.0
  >docker save -o /home/zule/tmp/git/docker/docker_3.0/nginx_1.0.tar nginx:1.0
  
-![enter description here](https://github.com/grandhappy/docker/blob/master/images/8.png)
+![enter description here](https://github.com/grandhappy/docker/blob/master/pic/8.png)
  - 构建bin包
  >tar -cvzf dragonball_2.0.tar.gz nginx_1.0.tar  tomcat01_1.0.tar  tomcat02_1.0.tar
  >vim install.sh
@@ -221,10 +221,10 @@ exit 0
 > docker rmi $(docker images -q)
 > sh ./dragonball_2.0.bin
 
-![enter description here](https://github.com/grandhappy/docker/blob/master/images/9.png)
+![enter description here](https://github.com/grandhappy/docker/blob/master/pic/9.png)
  - 测试
  打开浏览器进行测试
 
-![enter description here](https://github.com/grandhappy/docker/blob/master/images/4.png)
+![enter description here](https://github.com/grandhappy/docker/blob/master/pic/4.png)
 
-![enter description here](https://github.com/grandhappy/docker/blob/master/images/5.png)
+![enter description here](https://github.com/grandhappy/docker/blob/master/pic/5.png)
